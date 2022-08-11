@@ -3,76 +3,94 @@
     package="com.mehboob.universalmarketings">
 
     <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:largeHeap="true"
         android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Universalmarketings">
         <activity
-            android:name=".RulesActivity"
+            android:name=".activities.PaymentActivity"
             android:exported="false" />
         <activity
-            android:name=".PartenersActivity"
+            android:name=".activities.NewDashBoardActivity"
+            android:exported="true">
+
+        </activity>
+
+        <receiver
+            android:name=".SMSRecevier"
+            android:exported="true"
+            android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activities.RulesActivity"
             android:exported="false" />
         <activity
-            android:name=".FAQActivity"
+            android:name=".activities.PartenersActivity"
             android:exported="false" />
         <activity
-            android:name=".MyTeamActivity"
+            android:name=".activities.FAQActivity"
             android:exported="false" />
         <activity
-            android:name=".NotificationActivity"
+            android:name=".activities.MyTeamActivity"
             android:exported="false" />
         <activity
-            android:name=".ProfileActivity"
+            android:name=".activities.NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ProfileActivity"
             android:exported="true" />
         <activity
-            android:name=".HistoryActivity"
+            android:name=".activities.AboutUsActivity"
             android:exported="false" />
         <activity
-            android:name=".AboutUsActivity"
+            android:name=".activities.InvitationActivity"
             android:exported="false" />
         <activity
-            android:name=".InvitationActivity"
+            android:name=".activities.MyWalletActivity"
             android:exported="false" />
         <activity
-            android:name=".MyWalletActivity"
+            android:name=".activities.WithDrawalActivity"
             android:exported="false" />
         <activity
-            android:name=".WithDrawalActivity"
+            android:name=".activities.TopUpActivity"
             android:exported="false" />
         <activity
-            android:name=".TopUpActivity"
+            android:name=".activities.DashBoardActivity"
             android:exported="false" />
         <activity
-            android:name=".DashBoardActivity"
-            android:exported="false" />
+            android:name=".activities.LoginActivity"
+            android:exported="true">
+
+        </activity>
         <activity
-            android:name=".LoginActivity"
+            android:name=".activities.SignUpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-        <activity
-            android:name=".ForgotPasswordActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SignUpActivity"
-            android:exported="true" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true" >
 
-        </activity>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

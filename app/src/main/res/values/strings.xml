@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">universalmarketings</string>
+    <string name="app_name">Universal</string>
     <string name="ourback_desc"><![CDATA[UNIVERSAL SALES & Marketing was founded by a pair of brothers Derek & Adrian Khoo, two Digital Marketing specialists who are passionate about Digital Marketing and finding who are passionate about Digital Marketing and finding ways to help businesses grow in the digital landscape. At Adsometrix Marketing, we provide a full range of digital marketing services that are curated to help business owners transition into the ever-changing digital world. We adopt a data-proven and performance-driven working philosophy to ensure that we deliver the most effective marketing strategies for each and every one of our clients, and that our clients’ business goals are met.]]></string>
     <string name="camp_asia"><b>•</b> Malaysia Independent\nAgency of the Year– <b>Gold</b>\n<b>•</b> Malaysia Creative\n Agency of the Year – <b>Bronze</b>\n<b>•</b> Malaysia Digital Agency\n of the Year –<b>Bronze</b></string>
     <string name="am_atoy"><b>•</b>Video/Production Company of the Year –<b>Gold Local Hero</b>\n<b>•</b> Independent AOTY –<b>Gold Local Hero</b>\n<b>•</b>Creative AOTY – <b>Silver</b>\n<b>•</b>Digital AOTY – <b>Silver</b>\n<b>•</b>Social Media Marketing AOTY – <b>Silver</b>\n<b>•</b>Mobile Marketing AOTY – <b>Silver</b>\n<b>•</b>Influencer AOTY – <b>Bronze</b>\n<b>•</b>Consultant of the Year – <b>Bronze</b>\n<b>•</b>Most Effective Use Loyalty/CRM – <b>Silver</b>\n<b>•</b>For Nutox Malaysia Most Creative Specific Audience – <b>Bronze</b> for ookyo x DanKhoo</string>
@@ -17,4 +17,30 @@
     <string name="faq_aboutorderFreeze">About unable to complete the order The order grab time is from 9am to 9pm. If there is not enough time on the same day to complete 60 orders and cannot be withdrawn, don’t worry, your balance is safe on this platform, and 60 orders will be refreshed tomorrow to start again, and then you can withdraw after completing 60 orders on the day</string>
     <string name="partener_details">This platform is a three-level model, that is, the agent can get three generations of commission shares, all members of the three generations under the umbrella can get 0.1% commission for order grabbing, and the order grabbing for your own account is 0.6%. For example, you are a part-time member A of this platform, recommended by A B, B recommends C, and C recommends D. In this way, if D grabs an order of 500 yuan, account D will receive (0.6%) three commissions, and A, B, and C will receive 0.5 (0.1%) commissions.(All commissions above are settled immediately)</string>
     <string name="rules_reminder">In order to avoid malicious billing, each member is only allowed to have one account. The system tests that malicious billing will freeze his account and the balance in it will be confiscated. The general agent is divided into three levels, which can have 5 accounts, 10 accounts, and 15 accounts respectively. For more details, please look for customer service for inquiries.</string>
+    <string name="NotBtCustomer">Not a Universal Customer Yet?</string>
+    <string name="ultrafast">Ultrafast\nUltrareliable\nUltraconnected</string>
+    <string name="workingfromhome">Working from home. Gaming. Smart home tech. Everyone streaming at once? Only Full Fibre delivers speeds up to 900Mbps on the UK’s most reliable broadband technology.</string>
+    <string name="all_about_our_broadband"><u>All about our broadband</u></string>
+    <string name="bt_tv">Universal TV</string>
+    <string name="tv_packages">TV packages made for\nswapping</string>
+    <string name="only_bt">Only Universal lets you swap your TV package monthly. Choose a package today and change it next month if you want something different. The Universal TV Entertainment package includes Netflix, a NOW Entertainment Membership, AMC and more.</string>
+    <string name="add_tv_to_your_broadband">Add TV to your broadband</string>
+    <string name="swap_your_bt_tv_package">Swap your Universal TV package</string>
+    <string name="why_you_need_bt_tv"><u>Why you need Universal TV</u></string>
+    <string name="bt_sport">Universal Sport</string>
+    <string name="the_sport_you_love">The sport you love, the way\nyou love to watch it</string>
+    <string name="contract_Free">Contract-free or in a TV package, Universal Sport brings you 52 live Premier League matches a season, every Champions League match, exclusive Premiership Rugby and so much more. Plus, you’ll get access to the award-winning Universal Sport app.</string>
+    <string name="see_sport_deals">See sport deals</string>
+    <string name="copyrights">Copyrights</string>
+    <string name="copyright_Text">Sing 2 © 2021 Universal Studios. All Rights Reserved</string>
+    <string name="t_amp_cs"><![CDATA[T&Cs]]></string>
+    <string name="switch_over_now">Switch Over Now</string>
+    <string name="welcome_to_universal">Welcome to Universal</string>
+    <string name="universal_mobile">Universal Mobile</string>
+    <string name="refreshingly_simple_sim_plans">Refreshingly simple SIM plans</string>
+    <string name="allOurBrands">Get your hands on great value SIM and Family SIM plans, plus £5 off a month for all our broadband customers.</string>
+    <string name="andAsUniversal">And as Universal and EE are part of the same family, you can access exclusive EE offers and 10% off selected EE mobile plans.</string>
+    <string name="ready_set_go">Ready, Set, Go</string>
+    <string name="ifYouHadRecently">If you had recently applied to port-in\nto our Celcom network,\nyou can now check\nyour application status here.\nSee you on this side!</string>
+    <string name="be_one_of_us">Be One of Us</string>
 </resources>

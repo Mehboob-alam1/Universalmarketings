@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/background"
     android:orientation="vertical"
-    tools:context=".SignUpActivity">
+    tools:context=".activities.SignUpActivity">
 
     <ImageView
         android:layout_width="200dp"
@@ -20,38 +20,53 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:orientation="vertical">
-
-        <EditText
-            android:id="@+id/etUserNameIn"
-            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/bg_et"
-            android:hint="Username"
-            android:padding="5dp"
-            android:paddingStart="30dp"
-            android:textScaleX="0.9" />
+            android:background="@drawable/bg_et">
+
+            <EditText
+                android:id="@+id/etUserNameIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:singleLine="true"
+
+                android:textColor="@color/black"
+                android:hint="Username"
+
+                android:textScaleX="0.9" />
+        </com.google.android.material.textfield.TextInputLayout>
 
 
-
-        <EditText
-            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
-            android:id="@+id/etPasswordIn"
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="20dp"
+            app:passwordToggleEnabled="true"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/bg_et"
-            android:hint="Password"
-            android:padding="5dp"
-            android:paddingStart="30dp"
-            android:textScaleX="0.9" />
+            android:background="@drawable/bg_et">
+
+            <EditText
+                android:id="@+id/etPasswordIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:singleLine="true"
+
+                android:hint="Password"
+                android:textColor="@color/black"
+
+                android:textScaleX="0.9" />
+        </com.google.android.material.textfield.TextInputLayout>
 
 
     </LinearLayout>
@@ -81,26 +96,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-
+android:textColor="@color/black"
             android:text="No Account?" />
 
         <androidx.appcompat.widget.AppCompatCheckedTextView
             android:layout_width="wrap_content"
             android:id="@+id/txtSignUP"
+
             android:layout_height="wrap_content"
             android:layout_gravity="end"
             android:layout_marginLeft="10dp"
             android:text="Sign Up"
             android:textColor="@color/pri" />
     </LinearLayout>
-    <androidx.appcompat.widget.AppCompatCheckedTextView
-        android:layout_width="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:id="@+id/txtForgotPass"
-        android:layout_height="wrap_content"
-       android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="10dp"
-        android:text="Forgot Password ?"
-        />
+
 </LinearLayout>

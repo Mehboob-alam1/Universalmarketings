@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DashBoardActivity">
+    tools:context=".activities.DashBoardActivity">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -12,89 +12,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="120dp"
-            android:layout_height="60dp"
-            android:src="@drawable/logo"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
-        <LinearLayout
-
-            android:id="@+id/linearLayout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginRight="5dp"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView"
-            app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
-            app:layout_constraintTop_toTopOf="@+id/imageView">
-
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/ic_baseline_person_outline_24" />
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/dashboard_profileTxt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:text="Profile"
-                android:textColor="@color/pri"
-
-                />
-
-        </LinearLayout>
-
-        <LinearLayout
-
-            android:id="@+id/linearLayout2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginRight="5dp"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView"
-            app:layout_constraintEnd_toStartOf="@+id/linearLayout3"
-            app:layout_constraintTop_toTopOf="@+id/imageView">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Level : " />
-
-            <TextView
-                android:id="@+id/dashboard_levelTxt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="1" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linearLayout3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginEnd="10dp"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/linearLayout">
-
-            <TextView
-                android:id="@+id/dashboard_logoutTxt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Logout"
-                android:textColor="@color/pri" />
-
-
-        </LinearLayout>
+        <include
+            android:id="@+id/include2"
+            layout="@layout/toolbar" />
 
 
         <View
@@ -114,7 +35,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView">
+            app:layout_constraintTop_toBottomOf="@+id/include2">
 
             <LinearLayout
                 android:id="@+id/card"
@@ -130,107 +51,108 @@
             </LinearLayout>
 
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/profile_topupBtn"
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:onClick="topUp"
-                android:layout_below="@id/card"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="10dp"
-                android:background="@drawable/bg_shape"
-                android:gravity="center_vertical"
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:id="@+id/profile_topupBtn"-->
+<!--      -->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="150dp"-->
+<!--                android:layout_below="@id/card"-->
+<!--                android:layout_marginStart="16dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginEnd="10dp"-->
+<!--                android:background="@drawable/bg_shape"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:onClick="topUp"-->
 
 
-                app:layout_constraintEnd_toStartOf="@+id/profile_withdrawalBtn"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/card">
+<!--                app:layout_constraintEnd_toStartOf="@+id/profile_withdrawalBtn"-->
+<!--                app:layout_constraintHorizontal_bias="0.5"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/card">-->
 
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/library"
+<!--                <ImageView-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:src="@drawable/library"-->
 
-                    app:layout_constraintBottom_toTopOf="@+id/textView1"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.65" />
+<!--                    app:layout_constraintBottom_toTopOf="@+id/textView1"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent"-->
+<!--                    app:layout_constraintVertical_bias="0.65" />-->
 
-                <TextView
-                    android:id="@+id/textView1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
-                    android:text="Top Up"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
+<!--                <TextView-->
+<!--                    android:id="@+id/textView1"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginBottom="16dp"-->
+<!--                    android:text="Top Up"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent" />-->
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/profile_withdrawalBtn"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_below="@id/card"
-                android:layout_marginStart="10dp"
-                android:onClick="withDraw"
-                android:layout_marginEnd="16dp"
-                android:background="@drawable/bg_shape"
-                android:gravity="center_vertical"
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:id="@+id/profile_withdrawalBtn"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_below="@id/card"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                android:background="@drawable/bg_shape"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:onClick="withDraw"-->
 
-                app:layout_constraintBottom_toBottomOf="@+id/profile_topupBtn"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/profile_topupBtn"
-                app:layout_constraintTop_toTopOf="@+id/profile_topupBtn">
+<!--                app:layout_constraintBottom_toBottomOf="@+id/profile_topupBtn"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.5"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/profile_topupBtn"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/profile_topupBtn">-->
 
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/withdraw"
-                    app:layout_constraintBottom_toTopOf="@+id/textView"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.65" />
+<!--                <ImageView-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:src="@drawable/withdraw"-->
+<!--                    app:layout_constraintBottom_toTopOf="@+id/textView"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent"-->
+<!--                    app:layout_constraintVertical_bias="0.65" />-->
 
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
-                    android:text="Withdrawal"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
+<!--                <TextView-->
+<!--                    android:id="@+id/textView"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginBottom="16dp"-->
+<!--                    android:text="Withdrawal"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent" />-->
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/profile_myteamBtn"
                 android:layout_width="0dp"
-                android:layout_height="0dp"
+                android:layout_height="200dp"
                 android:layout_below="@id/card"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
                 android:background="@drawable/bg_shape"
                 android:gravity="center_vertical"
                 android:onClick="myWallet"
                 android:padding="5dp"
-                app:layout_constraintBottom_toBottomOf="@+id/profile_invitationBtn"
-                app:layout_constraintEnd_toStartOf="@+id/profile_invitationBtn"
+                app:layout_constraintBottom_toBottomOf="@+id/profile_FaqBtn"
+                app:layout_constraintEnd_toStartOf="@+id/profile_FaqBtn"
                 app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="spread"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/profile_topupBtn">
+                app:layout_constraintTop_toTopOf="@+id/profile_FaqBtn">
 
                 <ImageView
                     android:layout_width="50dp"
@@ -257,60 +179,65 @@
                     app:layout_constraintStart_toStartOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/profile_invitationBtn"
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_below="@id/card"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="16dp"
-                android:background="@drawable/bg_shape"
-                android:gravity="center_vertical"
-                android:onClick="invitation"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/profile_myteamBtn"
-                app:layout_constraintTop_toBottomOf="@+id/profile_topupBtn">
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:id="@+id/profile_invitationBtn"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="150dp"-->
+<!--                android:layout_below="@id/card"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                android:background="@drawable/bg_shape"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:onClick="invitation"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.5"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/profile_myteamBtn"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/profile_topupBtn">-->
 
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/ic_baseline_supervisor_account_24"
-                    app:layout_constraintBottom_toTopOf="@+id/textView3"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.65"
-                    app:tint="@color/black" />
+<!--                <ImageView-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:src="@drawable/ic_baseline_supervisor_account_24"-->
+<!--                    app:layout_constraintBottom_toTopOf="@+id/textView3"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent"-->
+<!--                    app:layout_constraintVertical_bias="0.65"-->
+<!--                    app:tint="@color/black" />-->
 
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
-                    android:text="Invitation"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
+<!--                <TextView-->
+<!--                    android:id="@+id/textView3"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginBottom="16dp"-->
+<!--                    android:text="Invitation"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent" />-->
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/profile_FaqBtn"
                 android:layout_width="0dp"
 
-                android:layout_height="150dp"
+                android:layout_height="200dp"
                 android:layout_below="@id/card"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="20dp"
+                android:layout_marginEnd="5dp"
                 android:background="@drawable/bg_shape"
                 android:gravity="center_vertical"
                 android:onClick="aboutUs"
-                app:layout_constraintEnd_toEndOf="@+id/profile_invitationBtn"
-                app:layout_constraintStart_toStartOf="@+id/profile_myteamBtn"
-                app:layout_constraintTop_toBottomOf="@+id/profile_invitationBtn">
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/profile_myteamBtn"
+                app:layout_constraintTop_toBottomOf="@+id/card"
+                app:layout_constraintVertical_bias="0.0">
 
                 <ImageView
                     android:layout_width="50dp"

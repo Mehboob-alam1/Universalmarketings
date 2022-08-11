@@ -3,6 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/universalmarketings/app/src/main/res/drawable/bg_btn.xml" value="0.1685" />
+        <entry key="..\:/AndroidStudioProjects/universalmarketings/app/src/main/res/drawable/bg_cirlce.xml" value="0.1685" />
+        <entry key="..\:/AndroidStudioProjects/universalmarketings/app/src/main/res/drawable/btnseebrand.xml" value="0.1885" />
+        <entry key="..\:/AndroidStudioProjects/universalmarketings/app/src/main/res/drawable/btnswapyourbt.xml" value="0.161" />
+        <entry key="..\:/AndroidStudioProjects/universalmarketings/app/src/main/res/layout/activity_about_us.xml" value="0.15" />
+        <entry key="..\:/AndroidStudioProjects/universalmarketings/app/src/main/res/layout/activity_dash_board.xml" value="0.12" />
+        <entry key="..\:/AndroidStudioProjects/universalmarketings/app/src/main/res/layout/activity_faqactivity.xml" value="0.15" />
+        <entry key="..\:/AndroidStudioProjects/universalmarketings/app/src/main/res/layout/activity_login.xml" value="0.15" />
+        <entry key="..\:/AndroidStudioProjects/universalmarketings/app/src/main/res/layout/activity_main.xml" value="0.15" />
+        <entry key="..\:/AndroidStudioProjects/universalmarketings/app/src/main/res/layout/activity_my_wallet.xml" value="0.15" />
+        <entry key="..\:/AndroidStudioProjects/universalmarketings/app/src/main/res/layout/activity_new_dash_board.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/universalmarketings/app/src/main/res/layout/activity_payment.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/universalmarketings/app/src/main/res/layout/activity_profile.xml" value="0.15" />
+        <entry key="..\:/AndroidStudioProjects/universalmarketings/app/src/main/res/layout/activity_sign_up.xml" value="0.15" />
+        <entry key="..\:/AndroidStudioProjects/universalmarketings/app/src/main/res/layout/sample_dashboard.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/universalmarketings/app/src/main/res/layout/toolbar.xml" value="0.25" />
         <entry key="..\:/Users/prime/AndroidStudioProjects/universalmarketings/app/src/main/res/drawable/b.xml" value="0.1515" />
         <entry key="..\:/Users/prime/AndroidStudioProjects/universalmarketings/app/src/main/res/drawable/bg_btn.xml" value="0.1445" />
         <entry key="..\:/Users/prime/AndroidStudioProjects/universalmarketings/app/src/main/res/drawable/bg_et.xml" value="0.1445" />
@@ -24,7 +40,7 @@
         <entry key="..\:/Users/prime/AndroidStudioProjects/universalmarketings/app/src/main/res/layout/activity_login.xml" value="0.2" />
         <entry key="..\:/Users/prime/AndroidStudioProjects/universalmarketings/app/src/main/res/layout/activity_main.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/prime/AndroidStudioProjects/universalmarketings/app/src/main/res/layout/activity_my_team.xml" value="0.17" />
-        <entry key="..\:/Users/prime/AndroidStudioProjects/universalmarketings/app/src/main/res/layout/activity_my_wallet.xml" value="0.18" />
+        <entry key="..\:/Users/prime/AndroidStudioProjects/universalmarketings/app/src/main/res/layout/activity_my_wallet.xml" value="0.2" />
         <entry key="..\:/Users/prime/AndroidStudioProjects/universalmarketings/app/src/main/res/layout/activity_notification.xml" value="0.21" />
         <entry key="..\:/Users/prime/AndroidStudioProjects/universalmarketings/app/src/main/res/layout/activity_parteners.xml" value="0.21" />
         <entry key="..\:/Users/prime/AndroidStudioProjects/universalmarketings/app/src/main/res/layout/activity_profile.xml" value="0.2" />
@@ -32,10 +48,12 @@
         <entry key="..\:/Users/prime/AndroidStudioProjects/universalmarketings/app/src/main/res/layout/activity_sign_up.xml" value="0.2" />
         <entry key="..\:/Users/prime/AndroidStudioProjects/universalmarketings/app/src/main/res/layout/activity_top_up.xml" value="0.17" />
         <entry key="..\:/Users/prime/AndroidStudioProjects/universalmarketings/app/src/main/res/layout/activity_with_drawal.xml" value="0.2" />
+        <entry key="..\:/Users/prime/AndroidStudioProjects/universalmarketings/app/src/main/res/layout/alertdialog_exit.xml" value="0.22" />
         <entry key="..\:/Users/prime/AndroidStudioProjects/universalmarketings/app/src/main/res/layout/dialog_contactus.xml" value="0.14" />
         <entry key="..\:/Users/prime/AndroidStudioProjects/universalmarketings/app/src/main/res/layout/listview.xml" value="0.16" />
         <entry key="..\:/Users/prime/AndroidStudioProjects/universalmarketings/app/src/main/res/layout/sample_team_member.xml" value="0.21" />
-        <entry key="..\:/Users/prime/AndroidStudioProjects/universalmarketings/app/src/main/res/layout/toolbar.xml" value="0.21" />
+        <entry key="..\:/Users/prime/AndroidStudioProjects/universalmarketings/app/src/main/res/layout/toolbar.xml" value="0.17" />
+        <entry key="..\:/Users/prime/AndroidStudioProjects/universalmarketings/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
       </map>
     </option>
   </component>
@@ -48,7 +66,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.33" />
+        <option name="scale" value="0.22" />
       </ProjectState>
     </option>
   </component>

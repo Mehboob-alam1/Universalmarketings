@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/background"
     android:orientation="vertical"
-    tools:context=".SignUpActivity">
+    tools:context=".activities.SignUpActivity">
 
     <ImageView
         android:layout_width="200dp"
@@ -14,74 +14,139 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:src="@drawable/logo" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:orientation="vertical">
-
-        <EditText
-            android:id="@+id/etUserName"
-            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+
             android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/bg_et"
-            android:hint="Username"
-            android:padding="5dp"
-            android:paddingStart="30dp"
-            android:textScaleX="0.9" />
+            android:background="@drawable/bg_et">
 
-        <EditText
-            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
-            android:id="@+id/etEmail"
+            <EditText
+                android:id="@+id/etUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Username"
+
+                android:textScaleX="0.9" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+
             android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/bg_et"
-            android:hint="Email"
-            android:padding="5dp"
-            android:paddingStart="30dp"
-            android:textScaleX="0.9" />
+            android:background="@drawable/bg_et">
 
-        <EditText
-            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
-            android:id="@+id/etPassword"
+            <EditText
+                android:id="@+id/etContactNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Contact number"
+
+                android:textScaleX="0.9" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/bg_et"
-            android:hint="Password"
-            android:padding="5dp"
-            android:paddingStart="30dp"
-            android:textScaleX="0.9" />
+            android:background="@drawable/bg_et">
 
-        <EditText
-            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
-            android:id="@+id/etConfPass"
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Email"
+
+                android:textScaleX="0.9" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+
             android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_et">
+
+            <EditText
+                android:id="@+id/etSecurityPin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Security pin"
+
+                android:textScaleX="0.9" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_et">
+            <EditText
+                android:id="@+id/etInvitaionCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Invitation code"
+
+                android:textScaleX="0.9" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:background="@drawable/bg_et"
-            android:hint="Confirm password"
-            android:padding="5dp"
-            android:paddingStart="30dp"
-            android:textScaleX="0.9" />
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            app:passwordToggleEnabled="true">
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:singleLine="true"
+
+                android:textScaleX="0.9" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
 
     </LinearLayout>
+</ScrollView>
+
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnSignUp"

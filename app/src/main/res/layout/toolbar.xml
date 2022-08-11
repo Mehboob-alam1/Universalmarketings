@@ -3,19 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="?android:attr/actionBarSize"
-    android:theme="@style/ThemeOverlay.AppCompat.DayNight.ActionBar">
+ >
 
-    <ImageView
-        android:id="@+id/toolbarBtnBack"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_marginStart="16dp"
-
-        android:src="@drawable/ic_back"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
 
@@ -23,8 +12,7 @@
         android:layout_height="?android:attr/actionBarSize"
         android:src="@drawable/logo"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/linearLayout8"
-        app:layout_constraintStart_toEndOf="@+id/toolbarBtnBack"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
@@ -41,6 +29,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
+            android:layout_marginEnd="8dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
@@ -60,30 +49,10 @@
                 android:textColor="@color/pri" />
         </LinearLayout>
 
-        <LinearLayout
 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Level :" />
-
-            <TextView
-                android:id="@+id/toolbarTxtLvl"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="3dp"
-                android:text="1"
-                android:textColor="@color/pri" />
-        </LinearLayout>
 
         <TextView
+            android:layout_marginStart="10dp"
             android:id="@+id/toolbarBtnLogout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
